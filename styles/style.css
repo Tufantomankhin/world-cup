@@ -6,7 +6,7 @@ body{
 }
 /* ---Banner Section--- */
 .container{
-    margin: 0 auto;
+    margin: 0.5 auto;
     color: rgb(193, 233, 243);
 }
 .banner{
@@ -23,12 +23,36 @@ body{
     font-size: 35px;
 }
 .banner-btn{
+    cursor: pointer;
     background-color: rgb(236, 45, 19);
     color: #ffffff;
     padding: 0.5em;
     border-radius: 5px;
-    animation-play-state: inherit;
 }
 .img-container{
    margin-top: 100px;
+}
+.img-container img{
+    animation: mymove 5s infinite;
+    cursor: pointer;
+
+}
+@keyframes mymove {
+    from {transform: translateX(50px);}
+    to { transform: translateX(-50px);}
+}
+
+/* ---Upcoming Match--- */
+.blog-container{
+    margin: 0 auto;
+    background-color: rgb(200, 255, 236);
+}
+.blog-group{
+    display: grid;
+    grid-template-columns: repeat(3, 4fr);
+    width: 100%;
+    border: 0em;
+}
+.blog{
+    
 }
