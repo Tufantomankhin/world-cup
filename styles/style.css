@@ -112,4 +112,5 @@ background-color: red;
 .img-transfer{
     display: grid;
     grid-template-columns: repeat(3, 2fr);
+    margin-left: 150px;
 }
