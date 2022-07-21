@@ -10,20 +10,22 @@ body{
     box-sizing: border-box;
 }
 /* ---Banner Section--- */
-.container, .blog-container{
+.container, .blog-container, .footer-container{
     width: 1140px;
     margin: 0 auto;
     color: rgb(193, 233, 243);
 }
 .banner{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 100%;
-    background-color: black;
+    grid-template-columns: auto auto;
+    /* width: 100%; */
+    background-color: #333;
     border-radius: 10px;
 }
 .text-container{
     padding: 50px;
+    margin-bottom: 8px;
+    /* text-align: center; */
 }
 .banner-heading{
     font-size: 35px;
@@ -51,39 +53,38 @@ body{
 
 /* ---Upcoming Match--- */
 .blog-container{
-    display: grid;
-    grid-template-columns: repeat(3, 4fr);
     margin-top: 20px;
 }
-.blog-group{
+/* .blog-group{
     
-}
+} */
 .blog{
     display: flex;
-    margin: 1%;
 
 }
 .blogs{
     margin-left: 15px;
+    margin-bottom: 5px;
 }
-.img-blog{
-}
-.blog-match{
+/* .img-blog{
+} */
+.blog-btn{
     display: flex;
     flex-direction: column;
-    background-color: black;
+    background-color: #333;
     justify-content: center;
-    padding: 20px;
+    padding: 10px;
     border-radius: 5px;
+    margin: 5px;
 }
-.blog-match .btn-1, .blog-match .btn-2, .blog-match .btn-3{
+.blog-btn .btn-1, .blog-btn .btn-2, .blog-btn .btn-3{
     padding: 8px 20px;
     border-radius: 7px;
     text-align: center;
     border: none;
     margin-bottom: 8px;
 }
-.blog-match .btn-3{
+.blog-btn .btn-3{
 background-color: red;
 }
 .text-blog .img-blog button{
@@ -114,3 +115,127 @@ background-color: red;
     grid-template-columns: repeat(3, 2fr);
     margin-left: 150px;
 }
+/* -----Footer----- */
+.footer{
+    width: 100%;
+    
+    text-align: center;
+}
+.footer .container{
+    width: 100%;
+    background-color: #333;
+    color: aliceblue;
+}
+.link-details{
+    
+    padding-left: 15px;
+    color: aliceblue;
+}
+.link-details a{
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 50px;
+}
+hr{
+    width: 80%;
+    margin: 0 auto;
+}
+/* .link-icon{
+
+} */
+
+/* ----------------Small-Device---------------- */
+@media only screen and (max-width:688px) {
+  .container,.blog-container {
+        width: 100%;
+        overflow: hidden;
+        padding: 0 20px;
+    }
+    .banner {
+        width: 100%;
+        height: 100%;
+        grid-template-columns: auto;
+        padding: 14px 16px;
+    }
+    .text-container {
+        display: block;
+        text-align: center;
+        width: 300px;
+        height: 230px;
+       padding: 14px 30px;
+    }
+    .img-container {
+        display: block;
+        align-content: center;
+        width: 400px;
+        height: 340px;
+        padding: 14px 16px;
+    }
+    .img-container{
+        margin-top: 100px;
+     }
+     .blog-container{
+        display: block;
+        grid-template-columns: auto;
+        align-content: center;
+        width: 400px;
+        
+    }
+    .blog {
+        flex-direction: column;
+    }
+    .img-transfer {
+        grid-template-columns: auto;
+        margin-left: 0;
+    }
+        
+    }
+
+    /* ------Tablet Device------ */
+    @media only screen and (min-width:688 - max-width:992px) {
+        .container,.blog-container{
+            width: 100%;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+        .banner{
+            width: 100%;
+            height: 100%;
+            grid-template-columns: auto;
+            padding: 14px 16px;
+        }
+        .text-container{
+            display: block;
+            text-align: center;
+            width: 400px;
+            height: 600px;
+        }
+        .img-container{
+            display: block;
+            align-content: center;
+            width: 400px;
+            height: 340px;
+            padding: 14px 16px;
+        }
+        .img-container {
+            margin-top: 100px;
+         }
+         .blog-container {
+            display: block;
+            grid-template-columns: 3, 2fr;
+            align-content: center;
+            width: 700px;
+            margin: auto;
+        }
+        .blog .blogs{
+            flex-direction: column;
+            grid-template-columns: 3, 2fr;
+        }
+        .img-transfer {
+            grid-template-columns: 3, 2fr;
+            margin-left: 0;
+        }
+            
+        }
+        
+    
