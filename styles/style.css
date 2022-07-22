@@ -118,7 +118,7 @@ background-color: red;
 /* -----Footer----- */
 .footer{
     width: 100%;
-    
+    margin-top: 50px;
     text-align: center;
 }
 .footer .container{

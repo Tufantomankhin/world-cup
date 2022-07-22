@@ -51,7 +51,7 @@ body{
     to { transform: translateX(-50px);}
 }
 
-/* ---Upcoming Match--- */
+/* -------------------Upcoming Match---------------------- */
 .blog-container{
     margin-top: 20px;
 }
@@ -85,9 +85,9 @@ body{
     margin-bottom: 8px;
 }
 .blog-btn .btn-3{
-background-color: red;
+background-color: tomato;
 }
-.text-blog .img-blog button{
+.text-blog .img-blog{
     display: inline-block;
     background-color: #ffffff;
     padding: 4px 15px;
@@ -98,27 +98,57 @@ background-color: red;
     margin-top: 7px;
 }
 .blogs .text-blog p{
-    font-size: 16px;
+    font-size: 25px;
     font-weight: 500;
     color: #333;
 }
-.blogs .text-blog .icon{
-    font-size: 16px;
-    font-weight: 500;
-    color: #333;
-}
-.blogs .text-blog .icon span{
+.blogs .text-blogs p{
     font-family: 'sans-serif';
+    font-size: 25px;
+    font-weight: 500;
+    padding-left: 70px;
+    color: #333;
+}
+.blogs .vs-blog .text-blog{
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+.blogs .text-blog{
+    font-family: 'sans-serif';
+    margin-top: 10px;
+    text-align: center;
+}
+.blogs .text-blogs{
+    text-align: center;
+}
+.vs-blog img{
+    margin-top: 6px;
+}
+.vs-blog .img-1{
+    margin-left: 15px;
+}
+.vs-blog .img-2{
+margin-left: 75px;
+}
+.vs-blog .img-3{
+    margin-left: 35px;
+    }
+.vs-blog strong{
+    color: rgb(2, 225, 250);
+    padding: 10px;
+    font-size: 20px;
 }
 .img-transfer{
     display: grid;
     grid-template-columns: repeat(3, 2fr);
     margin-left: 150px;
 }
-/* -----Footer----- */
+
+/* ------------------Footer-------------------------- */
 .footer{
     width: 100%;
-    
+    margin-top: 50px;
     text-align: center;
 }
 .footer .container{
@@ -140,6 +170,3 @@ hr{
     width: 80%;
     margin: 0 auto;
 }
-/* .link-icon{
-
-} */
